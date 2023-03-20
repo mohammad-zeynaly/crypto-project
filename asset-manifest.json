@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/crypto-project/static/css/main.4aff715c.css",
+    "main.js": "/crypto-project/static/js/main.1e7eaf00.js",
+    "static/media/IRANSansX-Medium.ttf": "/crypto-project/static/media/IRANSansX-Medium.4f1d99bc11045061eb51.ttf",
+    "static/media/IRANSansX-DemiBold.ttf": "/crypto-project/static/media/IRANSansX-DemiBold.62667fb79b1b86a5c58c.ttf",
+    "static/media/IRANSansX-Bold.ttf": "/crypto-project/static/media/IRANSansX-Bold.c24574dfea37477e552f.ttf",
+    "static/media/IRANSansX-Black.ttf": "/crypto-project/static/media/IRANSansX-Black.ffad6a6ff927a430061f.ttf",
+    "static/media/IRANSansX-Regular.ttf": "/crypto-project/static/media/IRANSansX-Regular.b790e428829ce9a59916.ttf",
+    "static/media/IRANSansX-Bold.woff": "/crypto-project/static/media/IRANSansX-Bold.c608ac6302f5a82980ed.woff",
+    "static/media/IRANSansX-DemiBold.woff": "/crypto-project/static/media/IRANSansX-DemiBold.dc719ec301cc0872c604.woff",
+    "static/media/IRANSansX-Medium.woff": "/crypto-project/static/media/IRANSansX-Medium.8e098ba93873ea906446.woff",
+    "static/media/IRANSansX-Regular.woff": "/crypto-project/static/media/IRANSansX-Regular.97fa446c7871fe1d3d2c.woff",
+    "static/media/IRANSansX-Black.woff": "/crypto-project/static/media/IRANSansX-Black.9b3478a577ffe4c26ed6.woff",
+    "index.html": "/crypto-project/index.html",
+    "main.4aff715c.css.map": "/crypto-project/static/css/main.4aff715c.css.map",
+    "main.1e7eaf00.js.map": "/crypto-project/static/js/main.1e7eaf00.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4aff715c.css",
+    "static/js/main.1e7eaf00.js"
+  ]
+}
