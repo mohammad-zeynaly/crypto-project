@@ -1,0 +1,51 @@
+.banner{
+    background-color: var(--second-bg-color);
+    padding: 5rem 0;
+}
+.banner__wrapper{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items:center;
+}
+.banner-chart{
+    width: 50%;
+    text-align:center;
+}
+.banner-chart__image{
+    object-fit:cover;
+}
+.banner-content{
+    width: 50%;
+}
+.banner-details{
+    margin-top: 4rem;
+}
+.banner__detail{
+    font-size: 1.8rem;  
+    color: var(--three-text-color);
+    margin-bottom: 2rem;
+    display: flex;
+    align-items:center;
+    font-family: "Iran-Sans-Regular";
+}
+.banner-details__shape{
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 100%;
+    margin-left: 1rem;
+}
+
+.banner-details__shape--one{
+    background-color: #3E7DFF;
+}
+.banner-details__shape--two{
+    background-color: #2347B9;
+}
+.banner-details__shape--three{
+    background-color: #8BA6FF;
+}
+.banner-details__shape--four{
+    background-color: #8696CA;
+}

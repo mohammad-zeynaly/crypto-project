@@ -1,0 +1,79 @@
+.weblog{
+    background-color: var(--primary-bg-color);
+    padding: 7rem 0;
+}
+
+.weblog .section-heading{
+    text-align: center;
+}
+.weblog-items{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 2.5rem;
+    padding-top: 4rem;
+}
+.weblog-item{
+    background-color: #F5F8FF;
+    border-radius: 0.6rem;
+    overflow: hidden;
+}
+.dark-theme .weblog-item{
+    background-color: #14102C;
+}
+.weblog-item__image{
+    width: 100%;
+    object-fit: cover;
+}
+.weblog-item__content{
+    padding: 2.5rem;
+}
+.weblog-item__details{
+    display:flex;
+    align-items:center;
+}
+.weblog-item-author,
+.weblog-item-date{
+    display:flex;
+    align-items:center; 
+}
+.weblog-item-author__icon,
+.weblog-item-date__icon{
+    fill: #131b4d;
+}
+.dark-theme .weblog-item-author__icon{
+    fill: #fff;
+}
+.dark-theme .weblog-item-date__icon{
+    fill: #fff;
+}
+.weblog-item-author__name,
+.weblog-item-date__number{
+    font-size: 1.5rem;
+    margin-right: 0.7rem;
+    color: var(--three-text-color);
+    font-weight: 400;
+}
+.weblog-item-date{
+    margin-right: 1.5rem;
+}
+.weblog-item-author__icon,
+.weblog-item-date__icon{
+    display:flex;
+    align-items:center;
+}
+.weblog-item-link__title{
+    font-size: 2.3rem;
+    color: #131b4d;
+    margin-top: 1rem;
+    font-family: "Iran-Sans-DemiBold";
+}
+.dark-theme .weblog-item-link__title{
+    color: #fff;
+}
+.weblog-item-link__title:hover{
+    color: var(--primary-text-color);
+}
+.weblog-item__caption{
+    margin-top: 1.5rem;
+    color: var(--three-text-color);
+}

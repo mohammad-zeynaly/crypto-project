@@ -1,0 +1,56 @@
+.testimonial{
+    background-color: var(--second-bg-color);
+    padding: 7rem 0;
+}
+.testimonial .section-heading{
+    text-align:center;
+}
+.testimonial-items{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 2.5rem;
+    margin-top: 4rem;
+}
+.testimonial-item{
+    background-color: #fff;
+    border-radius: 0.6rem;
+    padding: 2.5rem;
+    position: relative;
+}
+.dark-theme .testimonial-item{
+    background-color: #131B4D;
+}
+.testimonial-item-icon{
+    position: absolute;
+    top:0;
+    left: 0;
+}
+.testimonial-item-content{
+    display:flex;
+    align-items:center;
+}
+.testimonial-item-content__img{
+    border-radius: 0.6rem;
+    object-fit: cover;
+}
+.testimonial-item-content-person{
+    margin-right: 1.5rem;
+}
+.testimonial-item-content-person__name{
+    color: var(--second-text-color);
+    font-family: "Iran-Sans-DemiBold";
+    font-weight: 600;   
+    font-size: 1.8rem;
+}
+.testimonial-item-content-person__job{
+    display: inline-block;
+    color: var(--three-text-color);
+    margin-top: 0.5rem;
+}
+.dark-theme .testimonial-item-content-person__job{
+    color: #fff;
+}
+.testimonial-item-caption{
+    color: var(--three-text-color);
+    margin-top: 2rem;
+}

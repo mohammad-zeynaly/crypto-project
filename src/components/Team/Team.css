@@ -1,0 +1,70 @@
+.team{
+    background-color: var(--primary-bg-color);
+    text-align:center;
+}
+.team-items{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 2.5rem; 
+    padding-top: 4rem ; 
+    padding-bottom: 7rem;
+}
+.team-item{
+    background-color: var(--second-bg-color);
+    padding: 1.3rem;
+    border-radius: 0.6rem;
+    border-bottom: 0.4rem solid transparent;
+    transition: all 150ms ease-in;
+}
+
+.team-item:hover{
+    border-color:var(--primary-text-color);
+}
+.dark-theme .team-item{
+    background-color: #131B4D;
+}
+.team-item__image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.6rem;
+}
+.team-item__title{
+    margin-top: 1.5rem;
+    color: var(--second-text-color);
+    font-family: "Iran-Sans-DemiBold";
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+.team-item__text{
+    color:var(--three-text-color);
+    margin: 1.1rem 0;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.team-item-socials{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+.team-item__social{
+    display:inline-block;
+    margin-left: 1rem;
+}
+.team-item__social-icon{
+    fill: rgb(182 191 201);
+    stroke: rgb(182 191 201);
+    transition: all 150ms ease-in;
+}
+.team-item__social-icon:hover{
+    fill: var(--primary-text-color);
+    stroke: var(--primary-text-color);
+}
+.dark-theme .team-item__social-icon{
+    fill: #fff;
+    stroke: #fff;
+}
+.dark-theme .team-item__social-icon:hover{
+    fill: var(--primary-text-color);
+    stroke: var(--primary-text-color);
+}

@@ -1,0 +1,670 @@
+/*
+
+  ===============
+    Css Variabel 
+  ===============
+
+*/
+:root{
+  --primary-bg-color: #ffffff;
+  --second-bg-color: #F5F8FF;
+  --primary-text-color: #3E7DFF;
+  --second-text-color: #080321;
+  --three-text-color: #637381;
+  --card-color: #F5F8FF;
+}
+.dark-theme{
+  --primary-bg-color: #080321;
+  --second-bg-color: #14102c; 
+  --second-text-color: #ffffff;
+  --three-text-color: #b5b3bc;
+  --card-color: #131b4d;
+
+  /* --four-text-color: rgb(30, 39, 99) */
+}
+/*
+
+  =============
+    Css Reset
+  =============
+
+*/
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+hr{
+  height: 1px;
+  background-color: rgb(243, 244, 244);
+}
+.dark-theme hr{
+  background-color: rgb(45, 44, 74);
+}
+/*
+
+  =============
+    Add Fonts
+  =============
+
+*/
+@font-face {
+  font-family: "Iran-Sans-Regular";
+  src: url("../public/assets/font/ttf/IRANSansX-Regular.ttf") format("truetype"), url("../public/assets/font/woff/IRANSansX-Regular.woff") format("truetype");
+}
+@font-face {
+  font-family: "Iran-Sans-Medium";
+  src: url("../public/assets/font/ttf/IRANSansX-Medium.ttf") format("truetype"), url("../public/assets/font/woff/IRANSansX-Medium.woff") format("truetype");
+}
+@font-face {
+  font-family: "Iran-Sans-DemiBold";
+  src: url("../public/assets/font/ttf/IRANSansX-DemiBold.ttf") format("truetype"), url("../public/assets/font/woff/IRANSansX-DemiBold.woff") format("truetype");
+}
+@font-face {
+  font-family: "Iran-Sans-Bold";
+  src: url("../public/assets/font/ttf/IRANSansX-Bold.ttf") format("truetype"), url("../public/assets/font/woff/IRANSansX-Bold.woff") format("truetype");
+}
+@font-face {
+  font-family: "Iran-Sans-Black";
+  src: url("../public/assets/font/ttf/IRANSansX-Black.ttf") format("truetype"), url("../public/assets/font/woff/IRANSansX-Black.woff") format("truetype");
+}
+/*
+
+  ================
+    General Style 
+  ================
+
+*/
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Iran-Sans-Medium";
+  font-size: 1.6rem;
+  direction: rtl;
+  background-color: var(--primary-bg-color);
+  /* overflow-x: hidden; */
+  /* color: ; */
+  line-height: 1.6;
+}
+
+.container{
+  max-width:128rem ;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  position: relative;
+}
+
+
+
+
+/*
+
+  =====================
+    Responsive Project  
+  =====================
+
+*/
+
+
+@media screen and (min-width:1400px){
+  .container{
+    width: 1370px;
+  }
+
+/* ========== Responsive Roadmap  ========== */
+
+  .roadmap-item{
+    width: 100%;
+  }
+  .roadmap__shape{
+    right: -14%;
+  }
+  .roadmap-items__circle--left,
+  .roadmap-items__circle--right{
+    left: -19%;
+}
+
+}
+
+
+@media only screen and (max-width: 1270px) {
+  .roadmap-items__circle{
+    display:none;
+  }
+}
+
+
+@media only screen and (max-width: 1200px) {
+  .container{
+    max-width: 960px;
+  }
+
+
+/* ========== Responsive features  ========== */
+  .features-item__title{
+    font-size: 2rem;
+  }
+
+  .features-item__text{
+    font-size: 1.6rem;
+  }
+  
+
+/* ========== Responsive features  ========== */
+  .roadmap-item{
+    max-width: 42rem;
+  }
+
+
+/* ========== Responsive Weblog  ========== */
+  .weblog-item-date{
+    margin-right: 1rem;
+  }
+   .weblog-item-link__title{
+    font-size: 1.8rem;
+   }
+
+
+/* ========== Responsive Contact Us  ========== */
+  .contact-form,
+  .contact-content{
+    width:50%;
+  }
+  .contact-content__title{
+    max-width: 100%;
+  }
+
+
+/* ========== Responsive Footer  ========== */
+  .footer-option{
+    flex-basis: 34%;
+  }
+  .footer-list{
+    flex-basis: 33%;
+  }
+
+}
+
+
+@media only screen and (max-width: 992px){
+  .container{
+    max-width: 720px;
+  }
+
+
+/* ========== Responsive Navbar  ========== */
+  .nav__brand-title,
+  .footer__brand-title{
+    font-size: 3.5rem;
+  }
+  .menu{
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: -260px;
+    height: 100vh;
+    width: 260px;
+    background-color: var(--primary-bg-color);
+    padding: 2rem;
+    transition: all 150ms ease-in;
+  }
+  .menu--open{
+    right: 0;
+  }
+  .menu__item{
+    width: 100%;
+    margin-right:0;
+    margin-bottom: 2rem;
+    
+  }
+  .dropdown-menu{
+    width: 100%;
+    padding: 0;
+  }
+
+ .dropdown-menu--open{
+  top: 4rem;
+  opacity: 1;
+  visibility: visible;
+  
+  }
+  
+  .dropdown-menu--open .dropdown-menu__item--last{
+    display: block;
+    visibility: visible;
+    margin-top: 2rem;
+  }
+  .menu__btn{
+    margin-right: 3rem;
+    padding: 1.5rem;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    cursor: pointer;
+  }
+
+  .menu-open__line,
+  .menu-open__line::after,
+  .menu-open__line::before{
+    content: "";
+    display:block;
+    width: 3rem;
+    height:0.2rem;
+    background-color: var(--second-text-color);
+    border-radius: 6rem;
+    position: absolute;
+    cursor: pointer;
+    transition: all 150ms ease-in;
+  }
+  .menu-open__line::after{
+    top:-0.8rem;
+  }
+  .menu-open__line::before{
+    top:0.8rem;
+  }
+  .menu-open__line--close .menu-open__line{
+    background-color: transparent;
+  }
+  .menu-open__line--close .menu-open__line::after{
+    transform: translateY(8px) rotate(45deg);
+  }
+  .menu-open__line--close .menu-open__line::before{
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+
+/* ========== Responsive Home Section  ========== */
+  .home__title{
+    font-size: 4rem;
+  }
+
+
+/* ========== Responsive Ads Section  ========== */
+  .ads-items{
+    flex-wrap: wrap;
+    padding-top: 0.5rem;
+  }
+  .ads-item{
+    margin-top: 2.5rem;
+  }
+
+
+/* ========== Responsive features Section  ========== */
+  .features-items{
+    grid-template-columns: repeat(2,1fr);
+  }
+
+
+/* ========== Responsive Section Heading  ========== */
+  .section-heading__title,
+  .contact-content__title{
+    font-size: 4rem;
+  }
+
+
+/* ========== Responsive Section Heading  ========== */
+  .banner__wrapper{
+    flex-direction: column;
+  }
+
+  .banner-chart,
+  .banner-content{
+    width:100%;
+  }
+
+  .banner-content{
+    margin-top: 2rem;
+  }
+
+
+/* ========== Responsive Section Roadmap  ========== */
+  .roadmap__shape{
+    right:-16.5%;
+  }
+
+
+/* ========== Responsive Section Teams  ========== */
+  .team-items{
+    grid-template-columns: repeat(2,1fr);
+  }
+
+
+/* ========== Responsive Section Download  ========== */
+  .download__wrapper{
+    flex-direction: column;
+  }
+  .download-content,
+  .download-banner{
+    width:100%;
+    max-width: 100%;
+  }
+  .download-banner{
+    margin-top: 4rem;
+  }
+  .download-content{
+    text-align:center;
+  }
+  .download-content__links{
+    justify-content:center;
+  }
+
+
+/* ========== Responsive Section Questions  ========== */
+  .questions-item{
+    width: 70rem;
+  }
+
+
+/* ========== Responsive Weblog  ========== */
+  .weblog-items{
+    grid-template-columns: repeat(2,1fr);
+  }
+  .weblog-item-link__title{
+    font-size: 2rem;
+  }
+
+
+/* ========== Responsive Contact Us  ========== */
+  .contact__wrapper{
+    flex-direction: column;
+  }
+  .contact-content,
+  .contact-form{
+    width: 100%;
+  }
+  .contact-content{
+    text-align:center;
+  }
+  .contact__contact-text{
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .contact-form{
+    margin-top: 3rem;
+  }
+
+
+/* ========== Responsive Footer  ========== */
+  .footer-option,
+  .footer-list{
+    flex-basis: 50%;
+  }
+  .footer-list__text{
+    max-width: 28rem;
+  }
+}
+
+
+  
+@media only screen and (max-width: 768px) {
+  .container{
+    max-width: 540px;
+  }
+
+
+/* ========== Responsive Navbar  ========== */
+  .nav__brand-title,
+  .footer__brand-title{
+    font-size: 3rem;
+  }
+
+
+/* ========== Responsive Home Section  ========== */
+  .home__title{
+    font-size: 3.5rem;
+  }
+
+
+/* ========== Responsive features  ========== */
+  .features-items{
+    grid-template-columns: repeat(1,1fr);
+  }
+  .features-item__title{
+    font-size: 2.5rem;
+  }
+
+
+/* ========== Responsive Section Heading  ========== */
+  .section-heading__title,
+  .download-content__title,
+  .contact-content__title{
+    font-size: 3rem;
+  }
+
+
+/* ========== Responsive Roadmap  ========== */
+  .roadmap-items__line{
+    display:none;
+  }
+  .roadmap-item{
+    max-width: 100%;
+  }
+  .roadmap__shape{
+    right:-20%;
+  }
+  .roadmap-items{
+    grid-template-columns: repeat(1,1fr);
+  }
+  .roadmap-item--empty,
+  .roadmap-items__shape{
+    display:none;
+  }
+
+
+/* ========== Responsive Testimonial  ========== */
+  .testimonial-items{
+    grid-template-columns: repeat(1,1fr);
+  }
+
+  .testimonial-item-icon{
+    display:none;
+  }
+
+
+/* ========== Responsive Questions  ========== */
+  .questions-item{
+    width: 50rem;
+  }
+  .questions-item__title{
+    font-size: 1.8rem;
+  }
+
+
+/* ========== Responsive Weblog  ========== */
+  .weblog-items{
+    grid-template-columns: repeat(1,1fr);
+  }
+
+
+/* ========== Responsive Contact Us ========== */
+  .contact-form__title{
+    font-size:2rem;
+  }
+
+
+/* ========== Responsive Footer  ========== */
+  .footer-option,
+  .footer-list{
+    flex-basis: 100%;
+  }
+  .footer-list__text{
+    max-width: 100%;
+  }
+
+  .footer-list__title,
+  .news__title{
+    font-size: 2rem;
+  }
+
+}
+
+
+
+@media only screen and (max-width: 576px){
+  .container{
+    max-width: 100%;
+  }
+
+
+/* ========== Responsive Navbar  ========== */
+  .nav__link{
+    display: none;
+  }
+
+  .menu__btn{
+    margin-right: 2rem;
+  }
+
+
+/* ========== Responsive Home Section  ========== */
+  .home__title{
+    font-size: 3rem;
+  }
+  .home__caption{
+    font-size: 1.7rem;
+  }
+
+  .home__currency{
+    width: 3.7rem;
+    height:3.7rem;
+    margin-right: 1.5rem;
+  }
+
+  .home__currency svg{
+    width: 2.7rem;
+    height: 2.7rem;
+  }
+
+
+/* ========== Responsive Ads Section  ========== */
+  .ads-items{
+    flex-direction:column;
+  }
+  .ads__title{
+    font-size: 2rem;
+  }
+  
+
+/* ========== Responsive features  ========== */
+
+  .features-item__title{
+    font-size: 2rem;
+  }
+
+
+/* ========== Responsive Section Heading  ========== */
+.section-heading__mark{
+  font-size:1.8rem;
+}
+
+
+/* ========== Responsive Section Banner  ========== */
+
+.banner-chart__image{
+  width:100%;
+  height: auto;
+}
+
+
+/* ========== Responsive Section Banner  ========== */
+.roadmap__shape{
+  display: none;
+}
+.roadmap-item__caption{
+  font-size:1.6rem;
+}
+
+
+/* ========== Responsive Section Teams  ========== */
+.team-items{
+  grid-template-columns: repeat(1,1fr);
+}
+
+
+/* ========== Responsive Section Download  ========== */
+.download-content__link-icon{
+  margin-left:1.2rem;
+}
+.download-content__link-text{
+  font-size: 1.5rem;
+}
+.download-content__link{
+  padding: 1.2rem 1.5rem;
+}
+
+/* ========== Responsive Questions  ========== */
+  .questions-item__title{
+    font-size: 1.6rem;
+  }
+  .questions-item{
+    width: 100%;
+  }
+
+
+/* ========== Responsive Contact Us ========== */
+  .contact__contact{
+    width:100%;
+  }
+  .contact__contact-title{
+    font-size:1.7rem;
+  }
+
+}
+
+
+@media only screen and (max-width: 360px){
+
+
+/* ========== Responsive Navbar  ========== */
+  .nav-dark__btn{
+  margin-left: 0;
+  }
+
+  .nav__brand-title,
+  .footer__brand-title{
+    font-size: 2.5rem;
+  }
+
+
+/* ========== Responsive Ads Section  ========== */
+  .home__currency{
+    margin-right: 0;
+    margin-left: 1.5rem;
+  }
+  .home__currency:last-child{
+    margin-left:0;
+  }
+
+
+/* ========== Responsive Download Section  ========== */
+  .download-content__link-icon{
+    margin-left: 0.8rem;
+  }
+  .download-content__link {
+    padding: 1rem 1.3rem;
+  }
+  .download-content__link-text{
+  font-size: 1.4rem;
+  }
+
+}

@@ -1,0 +1,124 @@
+.footer{
+    background-color: var(--primary-bg-color);
+    padding-top: 4rem;
+}
+.footer-content{
+    padding-bottom: 7rem;
+}
+.footer__wrapper{
+    display:flex;
+    flex-wrap: wrap;
+    align-items:center;
+}
+.footer-list{
+    flex-basis: 18%;
+    margin-top: 3rem;
+}
+.footer-option{
+    flex-basis: 32%;
+    margin-top: 3rem;
+}
+.footer__brand{
+    color: var(--second-text-color);
+    font-family: "Iran-Sans-Bold";
+    display:flex;
+    align-items: center;
+}
+.footer__brand-img{
+    object-fit: cover;
+}
+.footer__brand-title{
+    font-size: 4rem;
+}
+.footer-list__text{
+    color: var(--three-text-color);
+    margin: 2.5rem 0;
+    max-width: 34rem;
+}
+.social{
+    display:flex;
+    align-items:center;
+}
+.social__item{
+    margin-left: 1.2rem;
+    background-color: rgb(245 248 255);
+    border-radius: 100%;
+    transition: all 150ms ease-in;
+}
+.dark-theme .social__item{
+    background-color: #131B4D;
+}
+.social__item:hover{
+    background-color: var(--primary-text-color);
+}
+.social__item:hover .social__link svg{
+    fill: #fff;
+}
+.social__link{
+    width: 3.7rem;
+    height:3.7rem;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.social__link svg{
+    fill:rgb(99 115 129) ;
+    transition: all 150ms ease-in;
+}
+.dark-theme .social__link svg{
+    fill:#fff ;
+}
+.footer-list__title,
+.news__title{
+    margin-bottom: 0.8rem;
+    font-size: 2.4rem;
+    color: var(--second-text-color);
+    font-family: "Iran-Sans-Bold";
+}
+.footer-list__item{
+    margin-top: 1.2rem;
+}
+.footer-list__link{
+    color: var(--three-text-color);
+    transition: all 150ms ease-in;
+}
+.footer-list__link:hover{
+    color: var(--primary-text-color);
+}
+.news__item{
+    display:flex;
+    align-items:center;
+    margin-top: 1.2rem;
+}
+.news__image{
+    border-radius: 0.6rem;
+}
+.news-content{
+    display:flex;
+    flex-direction:column;
+    margin-right: 2rem;
+}
+.news__link,
+.news__date,
+.news__date svg{
+    color: var(--three-text-color);
+    fill: var(--three-text-color);
+    font-size: 1.5rem;
+}
+.news__link:hover{
+    color: var(--primary-text-color);
+}
+.news__date svg{
+    margin-left: 0.5rem;
+}
+.news__date{
+    display:flex;
+    align-items:center;
+    margin-top:0.4rem;
+}
+.copy__right{
+    text-align:center;
+    color: var(--second-text-color);
+    padding: 2rem 0;
+    user-select: none;
+}

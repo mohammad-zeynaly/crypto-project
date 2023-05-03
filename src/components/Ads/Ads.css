@@ -1,0 +1,45 @@
+.ads{
+    background-color: var(--primary-bg-color);
+    padding-top: 4rem;
+    text-align: center;
+}
+
+.ads__title{
+    color: var(--second-text-color);
+    font-family: "Iran-Sans-Bold";
+}
+.ads-items{
+    display:flex;
+    justify-content: space-evenly;
+    align-items:center;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+}
+.ads-item{
+    filter: grayscale(0.9);
+    max-width: 18rem;
+    margin-left: 2rem;
+    transition:all 150ms ease-in;
+}
+
+.ads-item:hover{
+    filter: grayscale(0);
+}
+.ads-item__image{
+    width: 100%;
+    object-fit: cover;
+}
+.dark-theme .ads-item__image--one{
+    display: none;
+}
+.ads-item__image--two{
+    display: none;
+    opacity: 0.7;
+    transition: all 150ms ease-in;
+}
+.dark-theme .ads-item__image--two{
+    display: block;
+}
+.dark-theme .ads-item__image--two:hover{
+    opacity: 1;
+}

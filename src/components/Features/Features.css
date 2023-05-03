@@ -1,0 +1,34 @@
+.features{
+    background-color: var(--primary-bg-color);
+    padding: 8rem 0;
+    text-align: center;
+}
+.features-items{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 2.5rem;
+    margin-top: 4rem;
+}
+.features-item-pic{
+    background-color: var(--primary-text-color);
+    width: 7rem;
+    height: 7rem;
+    border-radius: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.features-item__image{
+    object-fit: cover;
+}
+.features-item__title{
+    font-size: 2.5rem;
+    color: var(--second-text-color);
+    margin-top: 2rem;
+    font-family: "Iran-Sans-Bold";
+}
+.features-item__text{
+    color: var(--three-text-color);
+    margin-top: 1rem;
+    font-size: 1.7rem;
+}

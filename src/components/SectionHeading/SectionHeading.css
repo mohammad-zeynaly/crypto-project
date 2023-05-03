@@ -1,0 +1,21 @@
+.section-heading{
+}
+.section-heading__mark{
+  color: var(--primary-text-color);
+  font-size:2rem;
+  font-weight: 600;
+}
+.section-heading__title{
+  font-family: "Iran-Sans-Bold";
+  font-size: 4.5rem;
+  color: var(--second-text-color);
+}
+.section-heading__text{
+  color: var(--three-text-color);
+  font-size: 1.7rem;
+  margin-top: 1rem;   
+}
+.section-heading__caption{
+  max-width: 56rem;
+  margin: 1rem auto;
+}

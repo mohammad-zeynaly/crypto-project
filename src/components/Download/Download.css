@@ -1,0 +1,108 @@
+.download{
+    background-color: var(--primary-bg-color);
+    padding: 7rem 0;
+}
+.download__wrapper{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items:center;
+}
+.download-content{
+    width: 50%;    
+    max-width: 40%;
+}
+.download-content__mark{
+    color: var( --primary-text-color);
+    font-family: "Iran-Sans-Bold";
+    font-size: 1.8rem;
+}
+.download-content__title{
+    font-family: "Iran-Sans-Bold";
+    font-size: 4rem;
+    color: var(--second-text-color);
+    margin: 1.5rem 0;
+}
+.download-content__caption{
+    color: var(--three-text-color);
+}
+.download-content__links{
+    display:flex;
+    align-items:center;
+    margin-top: 3rem;
+}
+.download-content__link{
+    display:flex;
+    align-items:center;
+    padding: 1.2rem 1.8rem;
+    border-radius: 4rem;
+}
+.download-content__link--one{
+    background-color: #2d2947;
+    color: #fff;
+    transition:all 150ms ease-in;
+}
+.download-content__link--one:hover{
+    background-color: #423E59;
+}
+.dark-theme .download-content__link--one{
+    background-color: #2A2543;
+}
+.download-content__link--two{
+    color: var(--three-text-color);
+    border: 1px solid #2d2947;
+    margin-right: 2rem;
+    transition: all 150ms ease-in;
+}
+.download-content__link--two:hover{
+    background-color: #F2F2F3;
+}
+.dark-theme .download-content__link--two:hover{
+    background-color: #2A2543;
+}
+.dark-theme .download-content__link--two{
+    color: #fff;
+}
+.download-content__link-icon{
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+    width: 3.5rem;
+    height:3.5rem;
+    border-radius: 100%;
+    margin-left: 1.5rem;
+}
+.download-content__link-icon--one{
+    background-color: var(--primary-text-color);
+}
+.download-content__link-icon--two{
+    background-color: #2d2947;
+}
+.dark-theme .download-content__link-icon--two{
+    background-color: #fff;
+}
+.download-content__link-icon--two svg{
+    fill: #fff;
+}
+.dark-theme .download-content__link-icon--two svg{
+    fill: #2d2947;
+}
+.download-content__link-text{
+}
+.download-banner{
+    width: 50%;
+}
+.download-banner__image{
+    width: 100%;
+    object-fit: cover;
+}
+
+.download-banner__image--dark{
+    display:none;
+}
+.dark-theme .download-banner__image--white{
+    display:none;
+}
+.dark-theme .download-banner__image--dark{
+    display:block;
+}

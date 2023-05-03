@@ -1,0 +1,112 @@
+.contact{
+    padding: 7rem 0;
+    background-color: var(--second-bg-color);
+}
+.contact__wrapper{
+    display:flex;
+    align-items:center;
+}
+.contact-content{
+    width: 60%;
+}
+.contact-content__mark{
+    color: var(--primary-text-color);
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+.contact-content__title{
+    font-family:"Iran-Sans-Bold";
+    font-size: 4rem;
+    color: var(--second-text-color);
+    max-width: 40rem;
+    margin-top: 0.5rem;
+}
+.contact__us{
+    display:flex;
+    flex-wrap: wrap;
+    align-items:center;
+    margin-top: 4rem;
+}
+.contact__contact{
+    width: 50%;
+    margin-bottom:2rem;
+}
+.contact__contact-title{
+    color: var(--second-text-color);
+    margin-bottom: 1rem;
+    font-family: "Iran-Sans-DemiBold";
+    font-size: 1.8rem;
+}
+.contact__contact-text{
+    display:block;
+    color: var(--three-text-color);
+    max-width: 25rem;
+}
+.contact-form{
+    width: 40%;
+    background-color: #fff;
+    padding: 2.5rem;
+    border-radius: 0.6rem;
+}
+.dark-theme .contact-form{
+    background-color: #131B4D;
+}
+.contact-form__title{
+    color: var(--second-text-color);    
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+}
+.form__wrapper{
+    margin-top: 1.5rem;
+    display:flex;
+    flex-direction: column;
+}
+.form__label{
+    margin-bottom: 0.8rem;
+    color: var(--second-text-color);
+}
+.form__input{
+    border: 1px solid #f3f4f4;
+    color: var(--three-text-color);
+    padding: 1.2rem 1.5rem;
+    border-radius: 0.6rem;
+    font-size: 1.6rem;
+    font-family: "Iran-Sans-Medium";
+    resize: vertical;
+}
+.dark-theme .form__input{
+    background-color: #1F2756;
+    border-color: rgba(243, 244, 244, 0.301);
+}
+.form__input::placeholder{
+    color: #9CA3BE;
+    font-size: 1.5rem;
+}
+.form__input:focus{
+    border-color: var(--primary-text-color);
+}
+.form__submit{
+    background-color: var(--primary-text-color);
+    font-family: "Iran-Sans-Medium";
+    font-size: 1.6rem;
+    color: #fff;
+    padding: 1rem ;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: all 150ms ease-in;
+    margin-top: 2.4rem;
+}
+.dark-theme .form__submit{
+    background-color: #fff;
+    color: #080321;
+}
+.form__submit:hover{
+    background-color: #518AFF;
+}
+.dark-theme .form__submit:hover{
+    background-color: #E8E9EE;
+}
