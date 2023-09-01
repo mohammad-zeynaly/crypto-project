@@ -14,7 +14,6 @@ import Footer from "./components/Footer/Footer";
 import "./App.css";
 
 class App extends Component {
-
   constructor(props) {
     super(props);
 
@@ -33,28 +32,26 @@ class App extends Component {
   }
 
   render() {
-
     return (
       <div className={`${this.state.themeWeb === true ? "dark-theme" : ""}`}>
         <Header isTheme={this.themeHandler.bind(this)}></Header>
 
         <main className="main">
-          <Ads></Ads>
-          <Features></Features>
-          <Banner></Banner>
-          <Roadmap></Roadmap>
-          <Team></Team>
-          <Testimonial></Testimonial>
-          <Download></Download>
-          <Questions></Questions>
-          <Weblog></Weblog>
-          <Contact></Contact>
+          <Ads />
+          <Features />
+          <Banner />
+          <Roadmap />
+          <Team />
+          <Testimonial />
+          <Download />
+          <Questions />
+          <Weblog />
+          <Contact />
         </main>
 
-        <Footer></Footer>
+        <Footer />
       </div>
     );
-    
   }
 }
 

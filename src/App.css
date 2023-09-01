@@ -237,19 +237,33 @@ body {
     margin-bottom: 2rem;
     
   }
-  .dropdown-menu{
-    width: 100%;
-    padding: 0;
+  .menu__item--down,
+  .dropdown-menu {
+    display:none;
+  }
+  .menu__item-mobile--down{
+    display:block;
   }
 
- .dropdown-menu--open{
+  .dropdown-mobile-menu{
+    width: 100%;
+    padding: 0;
+    display:none;
+  }
+
+ .dropdown-mobile-menu--open{
   top: 4rem;
   opacity: 1;
   visibility: visible;
   
   }
+
   
-  .dropdown-menu--open .dropdown-menu__item--last{
+  .menu__item-mobile--open .dropdown-mobile-menu{
+    display:block;
+  }
+  
+  .dropdown-mobile-menu--open .dropdown-menu__item--last{
     display: block;
     visibility: visible;
     margin-top: 2rem;
